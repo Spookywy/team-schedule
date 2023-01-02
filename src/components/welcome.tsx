@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import teamScheduleIcon from '../../public/images/team-schedule-icon.png'
 
 export default function Welcome() {
     return (
         <div className="md:grid md:grid-cols-2 h-screen">
-          <div className="md:bg-black md:shadow-black md:shadow-2xl md:h-full h-20 relative">
-              <Image src="/images/team-schedule-icon.png" alt="Team Schedule icon" className="object-scale-down mt-3" fill sizes="50vw"/>
+          <div className="md:bg-black md:shadow-black md:shadow-2xl md:h-full md:flex md:justify-center md:items-center h-20">
+              <Image src={teamScheduleIcon} alt="Team Schedule icon" className="md:w-1/2 w-20 mx-auto mt-3 bg-black rounded-md"/>
           </div>
           <div className="flex items-center justify-center p-10">
             <div>
