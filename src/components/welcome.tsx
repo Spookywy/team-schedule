@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 export default function Welcome() {
     return (
-        <div className="grid grid-cols-2 h-screen">
-          <div className="bg-black shadow-black shadow-2xl relative">
-              <Image src="/images/team-schedule-icon.png" alt="Team Schedule icon" className="object-scale-down" fill sizes="50vw"/>
+        <div className="md:grid md:grid-cols-2 h-screen">
+          <div className="md:bg-black md:shadow-black md:shadow-2xl md:h-full h-20 relative">
+              <Image src="/images/team-schedule-icon.png" alt="Team Schedule icon" className="object-scale-down mt-3" fill sizes="50vw"/>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center p-10">
             <div>
               <h1 className="text-5xl text-center font-bold">Team Schedule</h1>
               <p className="mt-10 mb-5 font-semibold text-lg">Simple and versatile. Effortlessly plan and coordinate your team.</p>
