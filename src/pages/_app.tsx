@@ -4,17 +4,21 @@ import { SessionProvider } from "next-auth/react";
 import { Analytics } from "@vercel/analytics/react";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { trpc } from "../lib/trpc";
+import type { AppType } from "next/app";
 
 config.autoAddCss = false;
 
-export default function App({
+const App: AppType = ({
   Component,
   pageProps: { session, ...pageProps },
-}: AppProps) {
+}: AppProps) => {
   return (
     <SessionProvider session={session}>
       <Component {...pageProps} />
       <Analytics />
     </SessionProvider>
   );
-}
+};
+
+export default trpc.withTRPC(App);
