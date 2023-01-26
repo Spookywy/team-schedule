@@ -8,4 +8,4 @@ Team Schedule is a small staff scheduling app.
 
 ## Production
 
-The application is deployed at the following address: http://team-schedule.vercel.app/
+The application is deployed at the following address: https://team-schedule.vercel.app/
